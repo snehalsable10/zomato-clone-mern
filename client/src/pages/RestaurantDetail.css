@@ -1,0 +1,203 @@
+.restaurant-header {
+  background: white;
+  margin-bottom: 30px;
+}
+
+.restaurant-header-image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.restaurant-header-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.restaurant-header-info {
+  padding: 30px 0;
+}
+
+.restaurant-header-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.restaurant-meta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.restaurant-meta span {
+  padding: 8px 16px;
+  background: #f8f9fa;
+  border-radius: 20px;
+  font-size: 0.95rem;
+}
+
+.rating {
+  background: #fff3cd !important;
+  color: #856404;
+  font-weight: 600;
+}
+
+.menu-section {
+  margin-bottom: 50px;
+}
+
+.menu-section h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.menu-item {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+}
+
+.menu-item-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.menu-item-info {
+  flex: 1;
+}
+
+.menu-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.menu-item-header h3 {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.veg-badge {
+  font-size: 0.85rem;
+}
+
+.menu-item-description {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.menu-item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item-footer .price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #28a745;
+}
+
+.unavailable {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.reviews-section h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review-card {
+  padding: 20px;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.reviewer-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviewer-info h4 {
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.review-rating {
+  color: #ffc107;
+  font-weight: 600;
+}
+
+.review-date {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.review-comment {
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .restaurant-header-image {
+    height: 250px;
+  }
+
+  .restaurant-header-info h1 {
+    font-size: 1.8rem;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-item {
+    flex-direction: column;
+  }
+
+  .menu-item-image {
+    width: 100%;
+    height: 200px;
+  }
+}
